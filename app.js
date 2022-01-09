@@ -14,14 +14,16 @@ var PORT = process.env.PORT || 3000;
 //creating instance
 app.get("/", (req, res) => {
     console.log(req);
-    res.send("My Name is smitha jacob ,i belongs to Norka Mern batch1");
+    res.send("welcome to coding competion #2 smitha jacob ,i belongs to Norka Mern batch1");
 });
 app.get("/:name", (req, res) => {
     var data = req.params.name;
     //console.log(req);
     res.send("you enteerd" + data);
 });
-app.post("/signup", (req, res) => {
+
+
+app.post("/home", (req, res) => {
     //in get value in params var Fname=req.params.name;
     var Fname = req.body.Fname;
     var Lname = req.body.Lname;
